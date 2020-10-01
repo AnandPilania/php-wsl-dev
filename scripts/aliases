@@ -30,23 +30,6 @@ function php56() {
     sudo update-alternatives --set php /usr/bin/php5.6
 }
 
-function php70() {
-    sudo update-alternatives --set php /usr/bin/php7.0
-}
-
-function php71() {
-    sudo update-alternatives --set php /usr/bin/php7.1
-}
-
-function php72() {
-    sudo update-alternatives --set php /usr/bin/php7.2
-}
-
-function php73() {
-    sudo update-alternatives --set php /usr/bin/php7.3
-}
-
-
 function php74() {
     sudo update-alternatives --set php /usr/bin/php7.4
 }
