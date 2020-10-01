@@ -1,10 +1,10 @@
-wget "https://raw.githubusercontent.com/laravel/settler/master/scripts/provision.sh" -O ->> settler.sh
+wget "https://raw.githubusercontent.com/AnandPilania/php-wsl-dev/master/scripts/homestead.sh" -O ->> settler.sh
 chmod +x settler.sh
 sudo bash settler.sh
 
 rm settler.sh
 
-wget "https://raw.githubusercontent.com/elegasoft/php-wsl-dev/master/scripts/aliases" -O ->> /home/$USER/.bash_aliases
+wget "https://raw.githubusercontent.com/AnandPilania/php-wsl-dev/master/scripts/aliases" -O ->> /home/$USER/.bash_aliases
 source /home/$USER/.profile
 
 rm -rf ~/.ssh
@@ -13,7 +13,7 @@ sudo chmod 600 ~/.ssh/id_rsa
 
 sudo apt purge -y openssh-server
 sudo apt install openssh-server
-wget "https://raw.githubusercontent.com/elegasoft/php-wsl-dev/settler/scripts/sshd_config" -O ->> /home/$USER/sshd_config
+wget "https://raw.githubusercontent.com/AnandPilania/php-wsl-dev/settler/scripts/sshd_config" -O ->> /home/$USER/sshd_config
 echo "AllowUsers $USER" >> /home/$USER/sshd_config
 sudo rm /etc/ssh/sshd_config
 sudo mv /home/$USER/sshd_config /etc/ssh/sshd_config
